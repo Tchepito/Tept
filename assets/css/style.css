@@ -48,15 +48,15 @@ p {
 }
 
 .main-bg {
-    background-image: url('../images/main-bg.svg');
+    background-image: url('../images/colina.jpg');
     background-size: cover;
     background-position: center center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .white-bg {
-    background: #FFFFFF;
-    color: #0A1128;
+    background: #ffffff;
+    color: #003cff;
 }
 
 .main-content {
@@ -254,7 +254,7 @@ body .full-width {
 
 .form-group input, .form-group textarea {
     border: none;
-    background: #FFFFFF;
+    background: #d8d8d8;
     padding: 1.5rem 2rem;
     width: 100%;
     font-size: 3rem;
@@ -266,9 +266,9 @@ body .full-width {
 }
 
 .form-group button {
-    border: 0.5rem solid #FFFFFF;
+    border: 0.5rem solid #414141;
     background: none;
-    color: #FFFFFF;
+    color: #888888;
     padding: 1.5rem 2rem;
     font-size: 3rem;
     cursor: pointer;
@@ -276,7 +276,7 @@ body .full-width {
 }
 
 .form-group button:hover {
-    background: #FFFFFF;
+    background: #888888;
     color: #0A1128;
 }
 

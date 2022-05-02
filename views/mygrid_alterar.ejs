@@ -10,28 +10,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-warning" role="alert">
             <a href="/admin"  class="alert-link">Voltar</a>
         </div>
-            <h1 class="display-4">My Grid - Gerenciamento de Conteúdo</h1>
-
-            <h3 class="display-6">My Grid - Excluir</h3>
+    <h1  class="display-4">My Grid - Gerenciamento de Conteúdo</h1>
+    <h3 class="display-6">My Grid - Alterar</h3>
+    <form action="/alterar_mygrid?id=<%=dados._id%>" method="post" >
+        <label for="titulo" class="form-label">TÍTULO:</label>
+        <input type="text" name="titulo" id="" required class="form-control" value="<%=dados.titulo%>"><br>
+        <label for="texto"class="form-label">TEXTO:</label>
+        <textarea name="texto" id="" cols="30" rows="10" required class="form-control"><%=dados.texto%></textarea><br>
+        <button type="button"  onclick="window.location.href='/mygrid'" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+          </svg>Cancelar</button>
+        <button type="submit" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+            <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+          </svg>Alterar</button>
         
-           <form action="/alterar_mygrid?id=<%=dados._id%>" method="post" >
         
-            <label for="titulo" class="form-label">Título:</label>
-        
-            <input type="text" name="titulo" id="" required class="form-control" value="<%=dados.titulo%>"><br>
-        
-            <label for="texto"class="form-label">Texto:</label>
-        
-            <textarea name="texto" id="" cols="30" rows="10" required class="form-control"><%=dados.texto%></textarea><br>
-        
-            <input type="button" value="Cancelar" onclick="window.location.href='/mygrid'" class="btn btn-info">
-        
-            <input type="submit" value="Alterar" class="btn btn-warming">
-        
-        </form>
-        </div>
+    </form>
+</div>
 </body>
 </html>
